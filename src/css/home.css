@@ -1,0 +1,44 @@
+.text {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  button {
+    /*height: 1rem;
+    width: 2rem;
+    background-color: #222;
+    Affects my code*/
+  }
+  
+  body {
+    background-color: rgb(192, 240, 232);
+  }
+  
+  .carousel-item {
+    text-align: center !important;
+  }
+  
+  .carousel-control {
+    height: auto;
+    width: 100px;
+    margin: 0px;
+    background-color: #333 !important;
+  }
+  
+  .cust-carousel {
+    top: 100px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 125px !important;
+  }
+  
+  .featured-item {
+    text-align: center;
+    padding-top: 1%;
+  }
+  
+  .formatting-div {
+    padding-top: 30px;
+    padding-bottom: 70px !important;
+    background-image: url('https://graphicdesignjunction.com/wp-content/uploads/2014/05/001+background+pattern+designs.jpg');
+  }
