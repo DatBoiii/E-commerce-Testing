@@ -1,23 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import prodArray from "./productArray";
 
 class CartButton extends Component {
-    render() {
-        return(
-            <div>
-                <ul className='products'>
-                    {this.props.products?.map(product => (
-                        <li key={product.id}>
-                            <div className='product'>
-                                <div className='product-price'>
-                                    <button onClick={() => this.props.addToCart(product)}className='button primary'>Add To Cart</button>
-                                </div>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+    // console.log(props.toString())
+    this.state = {
+      id: this.props.id,
+    };
+  }
+
+  render() {
+    return(
+        <div>
+            <ul className='products'>
+                {prodArray?.filter(product => product.id === 0).map(product => (
+                    <div key={product.id} className='product-price'>
+                        <button onClick={() => this.props.addToCart(product)}className='button primary'>Add To Cart</button>
+                    </div>
+                ))}
+            </ul>
+        </div>
+    );
+  }
 }
 
 export default CartButton;
