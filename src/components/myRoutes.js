@@ -19,6 +19,7 @@ class MyRoutes extends React.Component {
             <Route path='/product/2' element={<Product id={2}/>} />
             <Route path='/product/3' element={<Product id={3}/>} />
             <Route path='/product/4' element={<Product id={4}/>} />
+            <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
         </div>
       </Router>
